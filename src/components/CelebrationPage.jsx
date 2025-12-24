@@ -29,12 +29,12 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   // QNA Slides data
   const slides = [
     {
-      icon: "It's Siri Dayyy!!",
-      text: "🍰🥳🎉🎀✨",
+      icon: "✨",
+      text: "It's Your Special Day Yeyey!",
       type: "announcement",
     },
     {
-      icon: "💛",
+      icon: "✨",
       text: "Do you wanna see what I made??",
       type: "question",
       options: [
@@ -43,8 +43,8 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
       ],
     },
     {
-      icon: "🫶🏻",
-      text: "Have a look at it Bhonduuu!",
+      icon: "✨",
+      text: "Have a look at it, Madam Jiii",
       type: "announcement",
     },
   ];
@@ -302,7 +302,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                     }`}
                     onClick={() => handleAnswer(option.value)}
                   >
-                    {option.text} {option.value === "yes" && "🫶"}
+                    {option.text} {option.value === "yes" && "👆"}
                   </button>
                 ))}
               </div>
@@ -345,7 +345,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="lights"
                   onClick={() => handleButtonClick("lights")}
                 >
-                   Turn On the Lights🌙
+                  💡 Turn On the Lights
                 </button>
               )}
 
@@ -367,7 +367,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="decorate"
                   onClick={() => handleButtonClick("decorate")}
                 >
-                  🌷 Decorate
+                  🎨 Decorate
                 </button>
               )}
 
@@ -389,7 +389,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="message"
                   onClick={() => handleButtonClick("message")}
                 >
-                  💌 A Small Message for You Siri 💌
+                  💌 Well, I Have a Message for You Madam Ji
                 </button>
               )}
             </div>
@@ -413,34 +413,33 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
               </div>
             )}
 
-{/* Bunting decoration */}
-{activatedButtons.decorate && (
-  <div className="decoration-decorate bunting">
-    <div className="bunting-string">
-
-      <div className="bunting-row">
-  {["H","a","p","p","y"].map((letter, i) => (
-    <div key={i} className={`bunting-flag flag-${i % 3}`}>
-      <div className="flag-content">{letter}</div>
-    </div>
-  ))}
-</div>
-
-<div className="bunting-row">
-  {["B","i","r","t","h","d","a","y"].map((letter, i) => (
-    <div key={i} className={`bunting-flag flag-${i % 3}`}>
-      <div className="flag-content">{letter}</div>
-    </div>
-  ))}
-</div>
-
-
-    </div>
-  </div>
-)}
-
-
-
+            {/* Bunting decoration - second row */}
+            {activatedButtons.decorate && (
+              <div className="decoration-decorate bunting">
+                <div className="bunting-string">
+                  {[
+                    "H",
+                    "a",
+                    "p",
+                    "p",
+                    "y",
+                    " ",
+                    "B",
+                    "i",
+                    "r",
+                    "t",
+                    "h",
+                    "d",
+                    "a",
+                    "y",
+                  ].map((letter, i) => (
+                    <div key={i} className={`bunting-flag flag-${i % 3}`}>
+                      {letter}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Cake decoration - center */}
             {activatedButtons.music && (
