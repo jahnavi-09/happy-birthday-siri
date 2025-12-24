@@ -419,20 +419,21 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     <div className="bunting-string">
 
       <div className="bunting-row">
-        {["H", "a", "p", "p", "y"].map((letter, i) => (
-          <div key={`happy-${i}`} className={`bunting-flag flag-${i % 3}`}>
-            <span className="flag-letter">{letter}</span>
-          </div>
-        ))}
-      </div>
+  {["H","a","p","p","y"].map((letter, i) => (
+    <div key={i} className={`bunting-flag flag-${i % 3}`}>
+      <div className="flag-content">{letter}</div>
+    </div>
+  ))}
+</div>
 
-      <div className="bunting-row">
-        {["B", "i", "r", "t", "h", "d", "a", "y"].map((letter, i) => (
-          <div key={`birthday-${i}`} className={`bunting-flag flag-${i % 3}`}>
-            <span className="flag-letter">{letter}</span>
-          </div>
-        ))}
-      </div>
+<div className="bunting-row">
+  {["B","i","r","t","h","d","a","y"].map((letter, i) => (
+    <div key={i} className={`bunting-flag flag-${i % 3}`}>
+      <div className="flag-content">{letter}</div>
+    </div>
+  ))}
+</div>
+
 
     </div>
   </div>
