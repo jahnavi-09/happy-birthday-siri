@@ -29,12 +29,12 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   // QNA Slides data
   const slides = [
     {
-      icon: "✨",
-      text: "It's Your Special Day Yeyey!",
+      icon: "💛",
+      text: "It's Siri Dayy!",
       type: "announcement",
     },
     {
-      icon: "✨",
+      icon: "🫶",
       text: "Do you wanna see what I made??",
       type: "question",
       options: [
@@ -43,8 +43,8 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
       ],
     },
     {
-      icon: "✨",
-      text: "Have a look at it, Madam Jiii",
+      icon: "💕",
+      text: "Have a look at it, Bhonduuu!",
       type: "announcement",
     },
   ];
@@ -302,7 +302,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                     }`}
                     onClick={() => handleAnswer(option.value)}
                   >
-                    {option.text} {option.value === "yes" && "👆"}
+                    {option.text} {option.value === "yes" && "🫶"}
                   </button>
                 ))}
               </div>
@@ -345,7 +345,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="lights"
                   onClick={() => handleButtonClick("lights")}
                 >
-                  💡 Turn On the Lights
+                  Turn On the Lights🌙
                 </button>
               )}
 
@@ -367,7 +367,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="decorate"
                   onClick={() => handleButtonClick("decorate")}
                 >
-                  🎨 Decorate
+                  Decorate🌸
                 </button>
               )}
 
@@ -389,7 +389,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="message"
                   onClick={() => handleButtonClick("message")}
                 >
-                  💌 Well, I Have a Message for You Madam Ji
+                  💌 Well, I Have a Message for You 
                 </button>
               )}
             </div>
