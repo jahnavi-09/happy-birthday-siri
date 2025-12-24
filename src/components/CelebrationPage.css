@@ -419,6 +419,18 @@
   pointer-events: none;
 }
 
+.flag-content {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+
 
 
 /* Keep flags sizing small for space */
