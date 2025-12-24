@@ -30,7 +30,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   const slides = [
     {
       icon: "✨",
-      text: "It's Your Special Day Yeyey!",
+      text: "It is Siri Dayyy!!",
       type: "announcement",
     },
     {
@@ -44,7 +44,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     },
     {
       icon: "✨",
-      text: "Have a look at it, Madam Jiii",
+      text: "Have a look at it Bhonduuu",
       type: "announcement",
     },
   ];
@@ -389,7 +389,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="message"
                   onClick={() => handleButtonClick("message")}
                 >
-                  💌 Well, I Have a Message for You Madam Ji
+                  💌 A Small Message for You Siri 💌
                 </button>
               )}
             </div>
