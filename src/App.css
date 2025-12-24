@@ -123,7 +123,7 @@
 
 #teaserHeading {
   font-size: 1.3rem;
-  background: linear-gradient(45deg, #e91e63, #9c27b0, #e91e63);
+  background: linear-gradient(45deg, #ffeb3b, #ffc107, #ffeb3b);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
