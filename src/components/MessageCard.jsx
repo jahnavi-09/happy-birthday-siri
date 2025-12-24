@@ -16,16 +16,15 @@ function MessageCard({ isActive }) {
   const senderName = "Jahnavi";
   const message = `Hiieee My Bhonduuuu....
   Wish you a very veryy veryyyyy happyyyy birthday!!!🥰💞 
-  Hope you have the best day and get all that you deserve and more! I truely wish only the best for you and may allllll your dreams come true very very soon!! 
-  This is something I saw and I knew I had to do it for you... These past few months have been so different from what I am used to....not being around my comfort people any more is not 
-  something I was ready for... long distance friendship is really hard. I think i write thsi every year, but i will NEVER EVER forget my first day in college and your smile. Your smile reflected the confidence and the innocent Siri. 
-  You grew so much in those 3 years, and taught me more than I knew I was capable of. Miss all those events, hangout sessions, coming to your PG, Open Windows outtings,
-  and us this time last year in MI. 
+  Hope you have the best day and get all that you deserve and more! I truly wish only the best for you and may allllll your dreams come true very very soon!! 
+  This is something I saw, and I knew I had to make for you.🤗 These past few months have been so different from what I am used to....not being around my comfort people any more is not something I was ready for... long distance friendship is truly very hard. 
+  I think I write this every year, but i will NEVER EVER forget my first day in college when I met you. Your smile reflected the confidence in you, as well as you innocent side. From FY to TY and even now...we've really come a long way! I will proudly tell my children about my college friendships and all the memories we made. 
+  You grew so much in those 3 years, and taught me more than I knew I was capable of. Miss all those events, hangout sessions, coming to your PG, Open Windows outings, and us this time last year in MI celebrating your special dayy.🥹🫂💗
   Jaldi jaldi aajao Pune, ab aur nhi saha ja raha hai🥺
 
-Because this year we are not celebrating your bithday together, this is a small gift from me to you!💛
+Since this year we are not celebrating your birthday together, this is a small gift from me to you!💛
 
-Happy Birthday! 🎉
+Happy Birthday Siri! 🎉
 — Jahnavi <3`;
 
   // Handle page transitions
