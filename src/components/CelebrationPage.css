@@ -397,51 +397,30 @@
 
 .bunting-string {
   display: flex;
-  justify-content: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.bunting-row {
-  display: flex;
   justify-content: center;
-  gap: 6px;
+  align-items: flex-start;
+  gap: 5px;
+  flex-wrap: nowrap;
 }
-
-.flag-letter {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #2c1a00;
-  font-weight: bold;
-  font-size: 1rem;
-  pointer-events: none;
-}
-
-.flag-content {
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  z-index: 2;
-}
-
-
-
 
 /* Keep flags sizing small for space */
 .bunting-flag {
-  position: relative;
-  width: 40px;
+  width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: white;
+  padding-top: 30px;
+  animation: sway 3s ease-in-out infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
 }
-
 
 .flag-0 {
   border-top: 35px solid #00bcd4;
