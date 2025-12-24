@@ -29,8 +29,8 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   // QNA Slides data
   const slides = [
     {
-      icon: "🍰🥳🎉🎀✨",
-      text: "It is SIRI DAYYY!!",
+      icon: "It is SIRI DAYYY!!",
+      text: "🍰🥳🎉🎀✨",
       type: "announcement",
     },
     {
