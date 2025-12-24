@@ -414,32 +414,32 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
             )}
 
 {/* Bunting decoration - second row */} 
-            {activatedButtons.decorate && ( 
-  <div className="decoration-decorate bunting"> 
-    <div className="bunting-string"> 
-      {[ 
-    "H", 
-    "a", 
-    "p", 
-    "p", 
-    "y", 
-    " ", 
-    "B", 
-    "i", 
-    "r", 
-    "t", 
-    "h", 
-    "d", 
-    "a", 
-    "y", 
-  ].map((letter, i) => ( 
-    <div key={i} className={bunting-flag flag-${i % 3}}> 
-      {letter} 
-    </div> 
-    ))} 
-  </div> 
-  </div> 
-  )}
+            {activatedButtons.decorate && (
+  <div className="decoration-decorate bunting">
+    <div className="bunting-string">
+
+      {/* HAPPY row */}
+      <div className="bunting-row">
+        {["H", "a", "p", "p", "y"].map((letter, i) => (
+          <div key={`happy-${i}`} className={`bunting-flag flag-${i % 3}`}>
+            {letter}
+          </div>
+        ))}
+      </div>
+
+      {/* BIRTHDAY row */}
+      <div className="bunting-row">
+        {["B", "i", "r", "t", "h", "d", "a", "y"].map((letter, i) => (
+          <div key={`birthday-${i}`} className={`bunting-flag flag-${i % 3}`}>
+            {letter}
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+)}
+
 
 
             {/* Cake decoration - center */}
