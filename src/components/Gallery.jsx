@@ -12,8 +12,8 @@ function Gallery({ isActive }) {
 
   const photos = [
     { src: "public/images/pic2.jpg", alt: "Memory 1" },
-    { src: "/images/pic2.jpg", alt: "Memory 2" },
-    { src: "/images/pic3.jpg", alt: "Memory 3" },
+    { src: "public/images/pic2.jpg", alt: "Memory 2" },
+    { src: "public/images/pic3.jpg", alt: "Memory 3" },
     { src: "/images/pic4.jpg", alt: "Memory 4" },
     { src: "/images/pic5.jpg", alt: "Memory 5" },
     { src: "/images/pic6.jpg", alt: "Memory 6" },
