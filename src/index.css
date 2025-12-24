@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #ffeb3b 0%, #fff59d 100%);
+  background: linear-gradient(135deg, #fdd835 0%, #fff176 100%);
   text-align: center;
   color: #333;
   scroll-behavior: smooth;
