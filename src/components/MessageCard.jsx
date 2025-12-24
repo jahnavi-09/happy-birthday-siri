@@ -14,11 +14,18 @@ function MessageCard({ isActive }) {
   const messageContentRef = useRef(null);
   const recipientName = "Siri";
   const senderName = "Jahnavi";
-  const message = `Your message here...
+  const message = `Hiieee My Bhonduuuu....
+  Wish you a very veryy veryyyyy happyyyy birthday!!!🥰💞 
+  Hope you have the best day and get all that you deserve and more! I truely wish only the best for you and may allllll your dreams come true very very soon!! 
+  This is something I saw and I knew I had to do it for you... These past few months have been so different from what I am used to....not being around my comfort people any more is not 
+  something I was ready for... long distance friendship is really hard. I think i write thsi every year, but i will NEVER EVER forget my first day in college and your smile. Your smile reflected the confidence and the innocent Siri. 
+  You grew so much in those 3 years, and taught me more than I knew I was capable of. Miss all those events, hangout sessions, coming to your PG, Open Windows outtings,
+  and us this time last year in MI. 
+  Jaldi jaldi aajao Pune, ab aur nhi saha ja raha hai🥺
 
+Because this year we are not celebrating your bithday together, this is a small gift from me to you!💛
 
 Happy Birthday! 🎉
-
 — Jahnavi <3`;
 
   // Handle page transitions
