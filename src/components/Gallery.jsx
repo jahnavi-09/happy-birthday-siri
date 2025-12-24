@@ -2,6 +2,14 @@ import { gsap } from "gsap";
 import { useCallback, useEffect, useRef, useState } from "react";
 import "./Gallery.css";
 
+// If images are in `src/images`, import them:
+import pic1 from "../images/pic1.jpg";
+import pic2 from "../images/pic2.jpg";
+import pic3 from "../images/pic3.jpg";
+import pic4 from "../images/pic4.jpg";
+import pic5 from "../images/pic5.jpg";
+import pic6 from "../images/pic6.jpg";
+
 function Gallery({ isActive }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,28 +18,36 @@ function Gallery({ isActive }) {
   const photosRef = useRef([]);
   const lightboxImgRef = useRef(null);
 
+  // Use this array for images in `src/images` (imported)
   const photos = [
-    { src: "/images/pic2.jpg", alt: "Memory 1" },
+    { src: pic1, alt: "Memory 1" },
+    { src: pic2, alt: "Memory 2" },
+    { src: pic3, alt: "Memory 3" },
+    { src: pic4, alt: "Memory 4" },
+    { src: pic5, alt: "Memory 5" },
+    { src: pic6, alt: "Memory 6" },
+  ];
+
+  // If you prefer images in `public/images`, comment out the above array and use:
+  /*
+  const photos = [
+    { src: "/images/pic1.jpg", alt: "Memory 1" },
     { src: "/images/pic2.jpg", alt: "Memory 2" },
     { src: "/images/pic3.jpg", alt: "Memory 3" },
     { src: "/images/pic4.jpg", alt: "Memory 4" },
     { src: "/images/pic5.jpg", alt: "Memory 5" },
     { src: "/images/pic6.jpg", alt: "Memory 6" },
   ];
+  */
 
   // Reveal photos with GSAP when page becomes active
   useEffect(() => {
     if (isActive && !photosRevealed) {
       setTimeout(() => setPhotosRevealed(true), 10);
 
-      // Stagger animation for photos
       gsap.fromTo(
         photosRef.current,
-        {
-          opacity: 0,
-          y: 50,
-          scale: 0.8,
-        },
+        { opacity: 0, y: 50, scale: 0.8 },
         {
           opacity: 1,
           y: 0,
@@ -49,7 +65,6 @@ function Gallery({ isActive }) {
     setCurrentIndex(index);
     setLightboxOpen(true);
 
-    // Animate lightbox appearance
     if (lightboxImgRef.current) {
       gsap.fromTo(
         lightboxImgRef.current,
@@ -63,14 +78,8 @@ function Gallery({ isActive }) {
     setLightboxOpen(false);
   }, []);
 
-  // Handle body overflow in effect
   useEffect(() => {
-    if (lightboxOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
+    document.body.style.overflow = lightboxOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
@@ -79,7 +88,6 @@ function Gallery({ isActive }) {
   const showNext = useCallback(() => {
     const newIndex = (currentIndex + 1) % photos.length;
 
-    // Animate transition
     if (lightboxImgRef.current) {
       gsap.to(lightboxImgRef.current, {
         x: -100,
@@ -101,7 +109,6 @@ function Gallery({ isActive }) {
   const showPrev = useCallback(() => {
     const newIndex = (currentIndex - 1 + photos.length) % photos.length;
 
-    // Animate transition
     if (lightboxImgRef.current) {
       gsap.to(lightboxImgRef.current, {
         x: 100,
@@ -123,14 +130,9 @@ function Gallery({ isActive }) {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (!lightboxOpen) return;
-
-      if (e.key === "Escape") {
-        closeLightbox();
-      } else if (e.key === "ArrowLeft") {
-        showPrev();
-      } else if (e.key === "ArrowRight") {
-        showNext();
-      }
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowLeft") showPrev();
+      else if (e.key === "ArrowRight") showNext();
     };
 
     window.addEventListener("keydown", handleKeyDown);
