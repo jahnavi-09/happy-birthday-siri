@@ -29,12 +29,12 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   // QNA Slides data
   const slides = [
     {
-      icon: "It is SIRI DAYYY!!",
+      icon: "It's Siri Dayyy!!",
       text: "🍰🥳🎉🎀✨",
       type: "announcement",
     },
     {
-      icon: "🎀",
+      icon: "💛",
       text: "Do you wanna see what I made??",
       type: "question",
       options: [
@@ -44,7 +44,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     },
     {
       icon: "🫶🏻",
-      text: "Have a look at it Bhonduuu",
+      text: "Have a look at it Bhonduuu!",
       type: "announcement",
     },
   ];
@@ -302,7 +302,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                     }`}
                     onClick={() => handleAnswer(option.value)}
                   >
-                    {option.text} {option.value === "yes" && "👆"}
+                    {option.text} {option.value === "yes" && "🫶"}
                   </button>
                 ))}
               </div>
@@ -345,7 +345,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="lights"
                   onClick={() => handleButtonClick("lights")}
                 >
-                  💡 Turn On the Lights
+                   Turn On the Lights🌙
                 </button>
               )}
 
@@ -367,7 +367,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="decorate"
                   onClick={() => handleButtonClick("decorate")}
                 >
-                  🎨 Decorate
+                  🌷 Decorate
                 </button>
               )}
 
@@ -415,31 +415,29 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
 
             {/* Bunting decoration - second row */}
             {activatedButtons.decorate && (
-              <div className="decoration-decorate bunting">
-                <div className="bunting-string">
-                  {[
-                    "H",
-                    "a",
-                    "p",
-                    "p",
-                    "y",
-                    " ",
-                    "B",
-                    "i",
-                    "r",
-                    "t",
-                    "h",
-                    "d",
-                    "a",
-                    "y",
-                  ].map((letter, i) => (
-                    <div key={i} className={`bunting-flag flag-${i % 3}`}>
-                      {letter}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+  <div className="decoration-decorate bunting">
+    <div className="bunting-string">
+
+      <div className="bunting-row">
+        {["H","a","p","p","y"].map((letter, i) => (
+          <div key={`happy-${i}`} className={`bunting-flag flag-${i % 3}`}>
+            {letter}
+          </div>
+        ))}
+      </div>
+
+      <div className="bunting-row">
+        {["B","i","r","t","h","d","a","y"].map((letter, i) => (
+          <div key={`birthday-${i}`} className={`bunting-flag flag-${i % 3}`}>
+            {letter}
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+)}
+
 
             {/* Cake decoration - center */}
             {activatedButtons.music && (
