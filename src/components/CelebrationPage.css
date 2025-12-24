@@ -397,20 +397,26 @@
 
 .bunting-string {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 5px;
-  flex-wrap: nowrap;
+  justify-content: column;
+  align-items: center;
+  gap: 10px;
 }
+
+.bunting-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
 
 /* Keep flags sizing small for space */
 .bunting-flag {
-  width: 0;
+  width: 40px;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
