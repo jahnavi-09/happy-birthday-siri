@@ -105,7 +105,7 @@ function App() {
               </>
             )}
           </h1>
-          <p>Happyyy 21st💗</p>
+          <p>Beautiful Bhonduu💗</p>
         </section>
 
         <Countdown
@@ -116,10 +116,10 @@ function App() {
         <section className="teaser">
           <h2 id="teaserHeading">
             {birthdayReached
-              ? "💖 Ready for your surprise! 💖"
-              : "✨ A special celebration awaits you at midnight... ✨"}
+              ? "💖 Ready for your surprise?! 💖"
+              : "✨ A little celebration awaits you at midnight... ✨"}
           </h2>
-          <p className="teaser-hint">Something magical is about to unfold 💫</p>
+          <p className="teaser-hint">A special virtual celebration for my special one! 💫</p>
         </section>
 
         <button
@@ -128,7 +128,7 @@ function App() {
           disabled={!birthdayReached}
           onClick={() => goToPage(2)}
         >
-          🎀 Let's Celebrate
+          🎉Let's Celebrate🎉
         </button>
       </div>
 
@@ -155,7 +155,7 @@ function App() {
         </button>
         <MessageCard isActive={currentPage === 3} />
         <button className="page-nav-btn" onClick={() => goToPage(4)}>
-          📸 View Our Memories
+          📸 Bhonduu & Dumbuu Tales🦋
         </button>
       </div>
 
@@ -171,7 +171,7 @@ function App() {
         <Gallery isActive={currentPage === 4} />
         <section className="final">
           <h2 className="final-message">💖 Forever Yours — Your Dumbuu 💖</h2>
-          <p className="final-subtitle">Your personalized closing message ✨</p>
+          <p className="final-subtitle"> Have a wonderful dayyy full of masti, mazee and all your favourite food!🌈✨</p>
         </section>
       </div>
 
