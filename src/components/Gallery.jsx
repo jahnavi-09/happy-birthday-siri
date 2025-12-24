@@ -11,7 +11,7 @@ function Gallery({ isActive }) {
   const lightboxImgRef = useRef(null);
 
   const photos = [
-    { src: "/images/pic1.jpg", alt: "Memory 1" },
+    { src: "public/images/pic2.jpg", alt: "Memory 1" },
     { src: "/images/pic2.jpg", alt: "Memory 2" },
     { src: "/images/pic3.jpg", alt: "Memory 3" },
     { src: "/images/pic4.jpg", alt: "Memory 4" },
