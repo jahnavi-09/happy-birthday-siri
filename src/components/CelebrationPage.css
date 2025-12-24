@@ -408,6 +408,18 @@
   gap: 6px;
 }
 
+.flag-letter {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2c1a00;
+  font-weight: bold;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+
 
 /* Keep flags sizing small for space */
 .bunting-flag {
@@ -416,7 +428,7 @@
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   position: relative;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   font-weight: bold;
